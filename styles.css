@@ -15,6 +15,13 @@ Arial, "Noto Sans", sans-serif ;
     width: 100%;
 }
 
+header .container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 header
 {
     background-color: white;
@@ -22,9 +29,17 @@ header
 }
 
 
+nav ul, li 
+{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 nav a
 {
     text-decoration: none;
+    padding-right: 5px;
     color: #6b7280;
 }
 
@@ -34,8 +49,9 @@ nav a:hover
 }
 
 
-.overview-hero
+.overview-hero 
 {
+    display: flex;
     background-color: #E2E8F0;
 }
 
@@ -43,12 +59,26 @@ nav a:hover
 {
     width: 275px;
     height: 275px;
+    float: left;
+    padding-right: 50px;
+}
+
+overview-hero-text
+{
+    float: right;
 }
 
 .learn-about h2
 {
     font-size: 24px;
     color: #48BB78;
+}
+
+.cards 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
 }
 
 
@@ -76,13 +106,33 @@ nav a:hover
 {
     background-color: #4A5568;
     color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
 }
 
-.cta
+.testing-desciption 
+{
+    float: left;
+    width: 62%;
+
+}
+
+.cta .btn
 {
     background-color: #48BB78;
     border-radius: 5px;
     color: white;
+    float: right;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.stories .container 
+{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .stories .container h2, a
@@ -90,6 +140,7 @@ nav a:hover
     text-decoration: none;
     color: #5A67D8;
 }
+
 
 .stories h3
 {
@@ -102,12 +153,26 @@ nav a:hover
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    float: left;
+    margin-right:45px;
+    margin-top:30px;
 }
+
 
 .newsletter
 {
     background-color: #48BB78;
     color: white;
+    display:flex;
+    flex-direction:column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items:center;
+}
+
+.newsletter .form-group
+{
+    justify-content: center;
 }
 
 button
@@ -120,4 +185,8 @@ footer
 {
     background-color: #4A5568;
     color: white;
+    display:flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
 }
