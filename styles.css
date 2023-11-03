@@ -2,9 +2,7 @@
 body 
 {
     margin: 0;
-    font-family:`-apple-system,
-BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-Arial, "Noto Sans", sans-serif ;
+    font-family:-apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",Arial, "Noto Sans", sans-serif ;
     font-size: 18px;
 }
 
@@ -70,9 +68,11 @@ nav a:hover
     padding-top: 10px;
 }
 
-overview-hero-text
+.overview-hero-text
 {
     float: right;
+    width: 560px;
+    padding-left: 80px;
 }
 
 .learn-about h2
@@ -105,6 +105,12 @@ overview-hero-text
     padding: 5px 5px;
 }
 
+.card-body 
+{
+    padding-left: 10px;
+    width: 290px;
+}
+
 .learn-about h3
 {
     color: #48BB78 ;
@@ -118,13 +124,19 @@ overview-hero-text
     display: flex;
     align-items: center;
     padding-top: 100px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 260px;
+    padding-bottom: 100px;
+    margin-bottom: 110px;
+    padding-right: 260px;
+    
 }
 
 .testing-desciption 
 {
     float: left;
-    width: 62%;
-
+    width: 65%;
 }
 
 .cta .btn
@@ -134,7 +146,8 @@ overview-hero-text
     color: white;
     float: right;
     text-align: center;
-    padding: 15px 15px;
+    padding: 15px 40px;
+    margin-top: 55px;
 }
 
 .stories .container 
@@ -142,7 +155,7 @@ overview-hero-text
     display: flex;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .stories .container h2, a
@@ -155,12 +168,26 @@ overview-hero-text
 .stories h3
 {
     font-size: 18px;
+    width: 530px;
 }
+
+
+.stories p
+{
+    width: 690px;
+}
+
 
 .container article 
 {
     padding-bottom: 20px;
     margin-bottom: 30px;
+}
+
+.article-body
+{
+    float: right;
+    width: 560px;
 }
 
 
@@ -191,12 +218,20 @@ overview-hero-text
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32%;
 }
 
 .newsletter .container form
 {
     display: flex;
+
+}
+
+.newsletter p
+{
+    width: 52%;
+    text-align: left;
+    margin-left: 25px;
+    text-align-last: left;
 }
 
 .newsletter .container input 
@@ -204,7 +239,7 @@ overview-hero-text
     margin-right: 5px;
     padding-bottom: 20px;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 40px;
     padding-right: 80px;
     border: none;
     border-radius: 5px;
@@ -229,5 +264,6 @@ footer
     display:flex;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 50px;
     align-items: center;
 }
